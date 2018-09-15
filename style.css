@@ -1,0 +1,27 @@
+#title_body {
+    background-image: url("assets/title.png");
+    background-size: cover;
+    background-repeat: no-repeat; 
+}
+
+body {
+    image-rendering: -moz-crisp-edges;
+    image-rendering: -webkit-crisp-edges;
+    image-rendering: pixelated;
+    image-rendering: crisp-edges;
+    text-align: center;
+    background-color: #222942;
+    color: white;
+}
+body a {
+    color: #8ac540
+}
+button {
+    background-color: #8ac540; /* Green */
+    color: black;
+    padding: 7px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
