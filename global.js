@@ -1,7 +1,10 @@
+//global.js
+//set of global functions to manage session variables, mostly
+
 var ExhaustLevel = ["Wide Awake!", "Sweating a little.", "Getting tired.", "Exhausted.", "Basically dead."];
 var blockAmount = 11;
 
-var displayValues = function() {
+var displayValues = function() { //displays session values
     var money = sessionStorage.getItem('money');
     var exhaustion = ExhaustLevel[getExhaustion()];
     var street = getStreetText();
@@ -11,6 +14,8 @@ var displayValues = function() {
     $('#street').text("You are on " + street + " street.");
     $('#bill').text("Bill: $"+bill);
 }
+
+//global functions for getting arithmetic friendly session values
 
 var getMoney = function() {
     return parseInt(sessionStorage.getItem('money'));
@@ -37,6 +42,8 @@ var getStreetText = function() {
     else streetText = street + "th";
     return streetText;
 }
+
+//global functions for changing session values
 
 var increaseMoney = function(value) {
     var money = getMoney();

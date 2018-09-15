@@ -1,5 +1,7 @@
+//title_script.js
+//initializes session storage values
+
 $( document ).ready(function() {
-    console.log("Setting session variables.");
     sessionStorage.setItem('money', 100);
     sessionStorage.setItem('exhaustion', 0);
     sessionStorage.setItem('street', 11);
